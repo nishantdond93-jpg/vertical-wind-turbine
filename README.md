@@ -155,7 +155,17 @@
       <div class="reveal">
         <div class="specs">
           <div class="spec"><span>Turbine type</span><strong>Vertical-axis</strong></div>
-          <div class="spec"><span>Rotor material</span><strong>Add actual material</strong></div>
+          <div class="spec"><span>Turbine type</span><strong>Vertical Axis Wind Turbine (VAWT)</strong></div>
+
+<div class="spec"><span>Rotor material</span><strong>Enter your actual blade material</strong></div>
+
+<div class="spec"><span>Shaft & support</span><strong>Rotating shaft with bearing support</strong></div>
+
+<div class="spec"><span>Generator</span><strong>DC Generator</strong></div>
+
+<div class="spec"><span>Power circuit</span><strong>Voltage regulation and charging circuit</strong></div>
+
+<div class="spec"><span>Test load</span><strong>LED lighting load</strong></div>
           <div class="spec"><span>Shaft & support</span><strong>Add shaft / bearing details</strong></div>
           <div class="spec"><span>Generator</span><strong>Add motor / generator rating</strong></div>
           <div class="spec"><span>Power circuit</span><strong>Add controller details</strong></div>
