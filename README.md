@@ -150,7 +150,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-a
       <div class="spec"><span>Turbine type</span><strong>Vertical Axis Wind Turbine (VAWT)</strong></div>
       <div class="spec"><span>Rotor / blade material</span><strong>To be confirmed from prototype</strong></div>
       <div class="spec"><span>Shaft & support</span><strong>Rotating shaft with bearing support</strong></div>
-      <div class="spec"><span>Generator</span><strong>Generator type and rating to be confirmed</strong></div>
+      <div class="spec"><span>Generator</span><strong>DC Motor Used as Generator</strong></div>
       <div class="spec"><span>Electrical circuit</span><strong>Output / charging circuit (verify fitted components)</strong></div>
       <div class="spec"><span>Test load</span><strong>Record actual load and measured output</strong></div>
     </div>
