@@ -157,7 +157,10 @@
           <div class="spec"><span>Turbine type</span><strong>Vertical-axis</strong></div>
           <div class="spec"><span>Turbine type</span><strong>Vertical Axis Wind Turbine (VAWT)</strong></div>
 
-<div class="spec"><span>Rotor material</span><strong>Enter your actual blade material</strong></div>
+<div class="spec">
+  <span>Rotor material</span>
+  <strong>PVC Sheet</strong>
+</div>
 
 <div class="spec"><span>Shaft & support</span><strong>Rotating shaft with bearing support</strong></div>
 
