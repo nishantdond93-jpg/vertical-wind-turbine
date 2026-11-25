@@ -56,7 +56,15 @@
     .steps{display:grid;gap:19px}.step{display:grid;grid-template-columns:42px 1fr;gap:15px}.num{width:38px;height:38px;border-radius:12px;background:#53e0d018;color:var(--cyan);display:grid;place-items:center;font:700 14px "Space Grotesk"}.step h3{font-size:17px;margin:2px 0 6px}.step p{margin:0;color:var(--muted);font-size:13px}
     .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.spec{padding:17px 18px;border:1px solid var(--line);border-radius:14px;background:#0d1b2b}.spec span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}.spec strong{font:600 15px "Space Grotesk"}
     .notice{margin-top:18px;color:#8297ad;font-size:11px}
-    .gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.gallerybox{min-height:230px;border:1px dashed #5c7895;border-radius:20px;background:#0d1b2b;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;color:var(--muted)}.gallerybox strong{color:var(--text);font-family:"Space Grotesk";margin:8px 0}.gallerybox small{max-width:300px}
+    .<div class="gallerybox">
+  <img
+    src="WhatsApp%20Image%202026-11-25%20at%208.01.38%20PM.jpeg"
+    alt="Our actual vertical wind turbine"
+    class="project-image">
+
+  <strong>Our Wind Turbine Prototype</strong>
+  <small>Our mechanical engineering project prototype.</small>
+</div>{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.gallerybox{min-height:230px;border:1px dashed #5c7895;border-radius:20px;background:#0d1b2b;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;color:var(--muted)}.gallerybox strong{color:var(--text);font-family:"Space Grotesk";margin:8px 0}.gallerybox small{max-width:300px}
     .cta{border:1px solid #53e0d044;border-radius:25px;padding:42px;background:radial-gradient(circle at 90% 10%,#1b667055,transparent 45%),#0d1b2b;display:flex;align-items:center;justify-content:space-between;gap:25px}
     .cta h2{font-size:34px;margin:0 0 10px}.cta p{color:var(--muted);margin:0}
     footer{padding:28px 0;border-top:1px solid var(--line);color:#8195aa;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
