@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Wind Turbine</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #071b25;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b2631;
+}
+
+.logo {
+  color: #45e0ad;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #071b25, #104b4c);
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #45e0ad;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #c4d8d9;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 28px;
+  background: #45e0ad;
+  color: #071b25;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 70px 8%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+
+.about {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+  color: #c4d8d9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #10323d;
+  padding: 28px;
+  border-radius: 15px;
+  border: 1px solid #24515a;
+}
+
+.card h3 {
+  color: #45e0ad;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #c4d8d9;
+}
+
+.contact {
+  text-align: center;
+  background: #0b2631;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #9bb7b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">WINDPOWER</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <h1>Powering Tomorrow<br>
+    With <span>Wind Energy</span></h1>
+    <p>
+      Discover our Vertical Axis Wind Turbine project.
+      A smarter step towards clean, renewable and sustainable energy.
+    </p>
+    <a href="#about" class="btn">Explore Project</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Our Project</h2>
+  <p class="about">
+    Our Vertical Axis Wind Turbine is designed to convert
+    wind energy into electrical energy. Its vertical-axis
+    design allows it to capture wind from different directions.
+    This project explores renewable energy, CAD modelling
+    and sustainable engineering.
+  </p>
+</section>
+
+<section id="features">
+  <h2>Project Features</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>01. Clean Energy</h3>
+      <p>Uses wind as a renewable source of energy.</p>
+    </div>
+
+    <div class="card">
+      <h3>02. Vertical Design</h3>
+      <p>Designed to accept wind from multiple directions.</p>
+    </div>
+
+    <div class="card">
+      <h3>03. CAD Modelling</h3>
+      <p>Designed using engineering and 3D modelling concepts.</p>
+    </div>
+
+    <div class="card">
+      <h3>04. Sustainable Future</h3>
+      <p>Explores environmentally friendly energy solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Building a Greener Future</h2>
+  <p>Innovation today. Sustainable energy tomorrow.</p>
+</section>
+
+<footer>
+  © 2026 Vertical Wind Turbine Project
+</footer>
+
+</body>
+</html>
