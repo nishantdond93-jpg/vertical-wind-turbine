@@ -79,7 +79,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-a
 </head>
 <body>
 <header>
-  <div class="wrap nav">
+  <div class="visual"></div>
+
     <a class="logo" href="#home">VERTEX</a>
     <nav>
       <a href="#overview">Overview</a>
