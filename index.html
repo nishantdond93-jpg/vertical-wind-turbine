@@ -3,31 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VERTX | Vertical Axis Wind Turbine</title>
+<title>VERTX - Vertical Axis Wind Turbine</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
 body{font-family:Arial,sans-serif;background:#071321;color:#eef7ff;line-height:1.7}
-header{background:#0d2035;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:10}
+header{background:#0d2035;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:100}
 .logo{font-size:27px;color:#36d9ff;font-weight:bold}
-nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:12px}
+nav a{color:white;text-decoration:none;font-size:13px}
 nav a:hover{color:#36d9ff}
-.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 8%;background:linear-gradient(135deg,#071321,#123957)}
-.hero h1{font-size:55px;color:#36d9ff}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:45px 8%;background:linear-gradient(135deg,#071321,#123957)}
+.hero h1{font-size:58px;color:#36d9ff}
 .hero h2{font-size:25px;margin:12px}
-.hero p{max-width:750px;margin:15px auto;color:#c5d9e8}
+.hero p{max-width:800px;margin:15px auto;color:#c5d9e8}
 section{padding:65px 8%}
-h2.title{text-align:center;color:#36d9ff;font-size:32px;margin-bottom:30px}
-p{color:#d2e2ed}
-.card{background:#10263b;border:1px solid #24516b;border-radius:14px;padding:25px;margin:15px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.title{text-align:center;color:#36d9ff;font-size:32px;margin-bottom:30px}
+.card{background:#10263b;border:1px solid #24516b;border-radius:14px;padding:24px;margin:15px 0;overflow:hidden}
 .card h3{color:#36d9ff;margin-bottom:12px}
-img,video{width:100%;border-radius:12px;margin:12px 0;object-fit:cover}
-.placeholder{border:1px dashed #36d9ff;border-radius:10px;padding:25px;text-align:center;color:#9dc9df}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+p{color:#d2e2ed}
+img,video{width:100%;height:auto;border-radius:10px;margin:12px 0;display:block}
 .btn{display:inline-block;background:#13bce5;color:#061321;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px 5px}
-.btn:hover{background:#fff}
+.btn:hover{background:white}
 ul{padding-left:22px;color:#d2e2ed}
+model-viewer{width:100%;height:480px;background:#0a1a2b;border-radius:12px}
 footer{text-align:center;background:#0d2035;padding:25px;color:#9fc9df}
+.note{color:#9fc9df;font-size:13px}
 </style>
 </head>
 
@@ -40,9 +43,11 @@ footer{text-align:center;background:#0d2035;padding:25px;color:#9fc9df}
 <a href="#about">About</a>
 <a href="#working">Working</a>
 <a href="#design">Design</a>
-<a href="#manufacturing">Manufacturing</a>
-<a href="#assembly">Assembly</a>
+<a href="#model">3D Model</a>
 <a href="#gallery">Gallery</a>
+<a href="#manufacturing">Manufacturing</a>
+<a href="#video">Video</a>
+<a href="#assembly">Assembly</a>
 <a href="#future">Future Scope</a>
 </nav>
 </header>
@@ -50,95 +55,134 @@ footer{text-align:center;background:#0d2035;padding:25px;color:#9fc9df}
 <div class="hero" id="home">
 <h1>VERTX</h1>
 <h2>Vertical Axis Wind Turbine</h2>
-<p>Harnessing the power of wind through innovative engineering, sustainable design, modern manufacturing and renewable energy technology.</p>
+<p>Harnessing renewable wind energy through innovative engineering, modern manufacturing and sustainable design.</p>
 <a class="btn" href="#about">Explore Project</a>
 </div>
 
 <section id="about">
 <h2 class="title">About Our Project</h2>
 <div class="card">
-<p>VERTX is a Vertical Axis Wind Turbine project designed to convert wind energy into useful electrical energy. The turbine uses a vertically oriented rotor shaft and blades to capture wind energy. Unlike conventional horizontal axis turbines, a vertical axis wind turbine can accept wind from different directions without rotating the entire turbine towards the wind.</p>
+<p>VERTX is a Vertical Axis Wind Turbine project developed to demonstrate the conversion of wind energy into useful electrical energy. The turbine uses a vertically oriented rotor shaft and blades to capture wind energy.</p>
 <br>
-<p>The project demonstrates renewable energy generation, mechanical design, CAD modelling, fabrication techniques and assembly of engineering components. It encourages sustainable energy solutions and practical learning.</p>
+<p>Unlike conventional horizontal axis wind turbines, a vertical axis wind turbine can receive wind from different directions without rotating the entire turbine towards the wind. This project combines mechanical engineering, CAD modelling, fabrication, 3D printing, laser cutting and assembly.</p>
+<br>
+<p>Our main objective is to understand renewable energy technology and develop a practical model demonstrating clean and sustainable power generation.</p>
 </div>
 </section>
 
 <section id="working">
 <h2 class="title">Working Principle</h2>
 <div class="grid">
-<div class="card"><h3>01. Wind Capture</h3><p>Wind strikes the turbine blades and produces a force that causes the rotor to rotate.</p></div>
-<div class="card"><h3>02. Mechanical Rotation</h3><p>The rotating blades transfer mechanical energy to the central vertical shaft.</p></div>
-<div class="card"><h3>03. Power Generation</h3><p>The rotating shaft drives a generator that converts mechanical energy into electrical energy.</p></div>
-<div class="card"><h3>04. Electrical Output</h3><p>The generated electricity can be measured, stored or supplied to a suitable electrical load.</p></div>
+<div class="card"><h3>01. Wind Capture</h3><p>Wind strikes the turbine blades and creates a force that makes the rotor rotate.</p></div>
+<div class="card"><h3>02. Shaft Rotation</h3><p>The rotating blades transfer mechanical energy to the central vertical shaft.</p></div>
+<div class="card"><h3>03. Power Generation</h3><p>The shaft drives a generator, converting mechanical energy into electrical energy.</p></div>
+<div class="card"><h3>04. Electrical Output</h3><p>The generated electricity can be measured and supplied to a suitable electrical load or storage system.</p></div>
 </div>
 </section>
 
 <section id="design">
-<h2 class="title">Design and Components</h2>
+<h2 class="title">Design and Main Components</h2>
 <div class="grid">
 <div class="card"><h3>Turbine Blades</h3><p>Capture wind energy and produce rotational force.</p></div>
 <div class="card"><h3>Vertical Shaft</h3><p>Transfers rotational motion from the rotor to the generator.</p></div>
-<div class="card"><h3>Bearings</h3><p>Support the rotating shaft and reduce friction.</p></div>
-<div class="card"><h3>Supporting Frame</h3><p>Provides structural support and stability to the turbine.</p></div>
+<div class="card"><h3>Bearings</h3><p>Support the rotating shaft and help reduce friction.</p></div>
+<div class="card"><h3>Supporting Frame</h3><p>Provides structural support and stability.</p></div>
 <div class="card"><h3>Generator</h3><p>Converts mechanical rotation into electrical energy.</p></div>
 <div class="card"><h3>Electrical Connections</h3><p>Connect the generator to measuring equipment or a suitable load.</p></div>
 </div>
 </section>
 
-<section id="manufacturing">
-<h2 class="title">Manufacturing Processes</h2>
-<div class="grid">
+<section id="model">
+<h2 class="title">3D CAD Model</h2>
 <div class="card">
-<h3>3D Printing</h3>
-<p>3D printing is an additive manufacturing process in which components are produced layer by layer from a digital CAD model. It helps manufacture customized parts and supports rapid prototyping.</p>
-<img src="image1.jpeg" alt="3D printing process" onerror="this.style.display='none'">
-<img src="image2.jpeg" alt="3D printed turbine component" onerror="this.style.display='none'">
-<img src="image3.jpeg" alt="3D printed part" onerror="this.style.display='none'">
-</div>
-<div class="card">
-<h3>Laser Cutting</h3>
-<p>Laser cutting uses a focused laser beam to cut material according to a digital design. It provides accurate profiles, clean edges and repeatable manufacturing.</p>
-<img src="image6.jpeg" alt="Laser cutting process" onerror="this.style.display='none'">
-<img src="image7.jpeg" alt="Laser cut component" onerror="this.style.display='none'">
-<img src="image8.jpeg" alt="Laser cutting fabrication" onerror="this.style.display='none'">
-<img src="image9.jpeg" alt="Manufactured part" onerror="this.style.display='none'">
-</div>
-</div>
-</section>
-
-<section id="assembly">
-<h2 class="title">3D Assembly of VERTX</h2>
-<div class="card">
-<h3>Complete Turbine Assembly</h3>
-<p>The assembly stage brings together the individual components of the Vertical Axis Wind Turbine. The blades, shaft, bearings, supporting frame and generator are positioned and connected to form the complete system.</p>
-<p>CAD assembly helps understand component placement, alignment, connections and the overall structure before physical fabrication.</p>
-
-<div class="placeholder">
-<p>VERTX ASSEMBLY FILE</p>
-<p>Place your assembly file in the same folder as index.html.</p>
-</div>
-
-<a class="btn" href="assembly.dlg" download>Download Assembly File</a>
-<p><strong>Note:</strong> Rename your actual file to <code>assembly.dlg</code> or change the link above to match its exact filename.</p>
+<p>Explore the digital 3D model of our Vertical Axis Wind Turbine.</p>
+<model-viewer src="turbine.glb" alt="VERTX 3D Model" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
+<p class="note">Upload turbine.glb in the same folder as index.html.</p>
 </div>
 </section>
 
 <section id="gallery">
-<h2 class="title">Project Gallery</h2>
+<h2 class="title">Our Project Gallery</h2>
+<div class="grid">
+<div class="card"><h3>Project Photograph 1</h3><img src="111.jpeg" alt="Project photo 1"></div>
+<div class="card"><h3>Project Photograph 2</h3><img src="1113.jpeg" alt="Project photo 2"></div>
+<div class="card"><h3>Project Photograph 3</h3><img src="WhatsApp Image 2026-11-26 at 9.46.03 AM.jpeg" alt="Project photo 3"></div>
+<div class="card"><h3>Project Photograph 4</h3><img src="project-photo-1.jpg" alt="Project photo 4"></div>
+<div class="card"><h3>Additional Photograph</h3><img src="11225.jpeg" alt="Project photo 5"></div>
+<div class="card"><h3>Additional Photograph</h3><img src="22.jpeg" alt="Project photo 6"></div>
+</div>
+</section>
+
+<section id="manufacturing">
+<h2 class="title">Manufacturing and Fabrication</h2>
 <div class="grid">
 <div class="card">
-<h3>Manufacturing Video</h3>
-<p>Watch the manufacturing process of the turbine components.</p>
-<video controls>
-<source src="image1.mp4" type="video/mp4">
-Your browser does not support this video.
-</video>
+<h3>3D Printing Process</h3>
+<p>3D printing is an additive manufacturing process in which components are created layer by layer from a digital CAD model. It helps produce customized components and supports rapid prototyping.</p>
+<img src="image1.jpeg" alt="3D printing 1">
+<img src="image2.jpeg" alt="3D printing 2">
+<img src="image3.jpeg" alt="3D printing 3">
+<img src="image4.jpeg" alt="3D printing 4">
+<img src="image5.jpeg" alt="3D printing 5">
 </div>
+
 <div class="card">
-<h3>Additional Project Images</h3>
-<img src="image4.jpeg" alt="Project image 4" onerror="this.style.display='none'">
-<img src="image5.jpeg" alt="Project image 5" onerror="this.style.display='none'">
+<h3>Laser Cutting Process</h3>
+<p>Laser cutting uses a focused laser beam to cut material according to a digital design. It provides accurate profiles, repeatable results and clean cuts.</p>
+<img src="image6.jpeg" alt="Laser cutting 1">
+<img src="image7.jpeg" alt="Laser cutting 2">
+<img src="image8.jpeg" alt="Laser cutting 3">
+<img src="image9.jpeg" alt="Laser cutting 4">
 </div>
+</div>
+</section>
+
+<section id="video">
+<h2 class="title">Project Manufacturing Video</h2>
+<div class="card">
+<p>Watch the video showing the manufacturing and fabrication process of our turbine components.</p>
+<video controls preload="metadata">
+<source src="project-video.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+<p class="note">Rename your video to project-video.mp4 or change the filename in this code to match your uploaded video.</p>
+</div>
+</section>
+
+<section id="assembly">
+<h2 class="title">Complete 3D Assembly</h2>
+<div class="card">
+<h3>VERTX Turbine Assembly</h3>
+<p>The assembly stage combines individual components of the Vertical Axis Wind Turbine into one complete system. It includes the blades, vertical shaft, bearings, supporting frame and generator.</p>
+<br>
+<p>CAD assembly helps understand component positioning, alignment and connections before physical fabrication. It also helps visualize how individual components fit together to form the complete turbine.</p>
+<br>
+<p>Our assembly work demonstrates the integration of mechanical components and the overall structure of the VERTX project.</p>
+<a class="btn" href="assembly.dlg" download>Download Assembly File</a>
+<p class="note">Upload your actual assembly file in the same folder and change assembly.dlg to its exact filename if necessary.</p>
+</div>
+</section>
+
+<section id="advantages">
+<h2 class="title">Advantages</h2>
+<div class="card">
+<ul>
+<li>Can accept wind from different directions.</li>
+<li>Uses renewable and clean wind energy.</li>
+<li>Provides practical engineering experience.</li>
+<li>Can be explored for small-scale power generation.</li>
+<li>Supports sustainable energy awareness.</li>
+</ul>
+</div>
+</section>
+
+<section id="applications">
+<h2 class="title">Applications</h2>
+<div class="grid">
+<div class="card"><h3>Small-Scale Generation</h3><p>Potential use in small renewable energy systems.</p></div>
+<div class="card"><h3>Remote Locations</h3><p>Can be explored for locations with limited electricity access.</p></div>
+<div class="card"><h3>Educational Projects</h3><p>Useful for demonstrating wind energy conversion.</p></div>
+<div class="card"><h3>Research and Development</h3><p>Supports experiments on blade design and turbine performance.</p></div>
 </div>
 </section>
 
@@ -146,13 +190,13 @@ Your browser does not support this video.
 <h2 class="title">Future Scope</h2>
 <div class="card">
 <ul>
-<li>Improving blade design for better wind energy capture.</li>
+<li>Improving blade geometry for better wind energy capture.</li>
 <li>Using efficient generators to improve electrical output.</li>
 <li>Adding battery storage for generated electricity.</li>
-<li>Testing performance under different wind speeds.</li>
+<li>Testing turbine performance at different wind speeds.</li>
 <li>Adding voltage and current monitoring systems.</li>
-<li>Exploring applications in remote and small-scale locations.</li>
-<li>Improving the structural strength and durability of the turbine.</li>
+<li>Exploring IoT-based monitoring and automatic control.</li>
+<li>Improving structural strength and durability.</li>
 </ul>
 </div>
 </section>
@@ -160,14 +204,14 @@ Your browser does not support this video.
 <section id="conclusion">
 <h2 class="title">Conclusion</h2>
 <div class="card">
-<p>VERTX demonstrates how wind energy can be converted into electrical energy using a Vertical Axis Wind Turbine. The project combines mechanical design, CAD modelling, 3D printing, laser cutting and assembly. It provides practical exposure to renewable energy technology and supports the development of sustainable engineering solutions.</p>
+<p>VERTX demonstrates the practical concept of converting wind energy into electrical energy through a Vertical Axis Wind Turbine. The project brings together mechanical design, CAD modelling, 3D printing, laser cutting and assembly. It provides valuable practical experience in engineering and highlights the importance of renewable energy for a sustainable future.</p>
 </div>
 </section>
 
 <footer>
 <h3>VERTX | Vertical Axis Wind Turbine</h3>
-<p>Engineering Innovation | Renewable Energy | Sustainable Future</p>
 <p>Group No. 26</p>
+<p>Engineering Innovation | Renewable Energy | Sustainable Future</p>
 </footer>
 
 </body>
